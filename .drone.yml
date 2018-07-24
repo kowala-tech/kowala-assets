@@ -1,0 +1,32 @@
+pipeline:
+
+    build:
+      image: kowalatech/hugo-dev:1.0.4
+      commands:
+        - make
+      when:
+        branch: [develop, master]
+
+    staging:
+      image: plugins/s3
+      acl: public-read
+      region: "us-east-1"
+      bucket: "cdn.staging.kowala.io"
+      source: theme/**/*
+      strip_prefix: theme/
+      target: /
+      encryption: AES256
+      when:
+        branch: [develop]
+
+    production:
+      image: plugins/s3
+      acl: public-read
+      region: "us-east-1"
+      bucket: "cdn.kowala.tech"
+      source: theme/**/*
+      strip_prefix: theme/
+      target: /
+      encryption: AES256
+      when:
+        branch: [master]

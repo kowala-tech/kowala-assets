@@ -1,0 +1,106 @@
+$colour-white:          #ffffff;
+$colour-blue:           #008ef5;
+$colour-green:          #33d093;
+$colour-pink:           #dc76d9;
+$colour-purple:         #a388e3;
+$colour-yellow:         #f4b457;
+$colour-aqua:           #2eb4e5;
+$colour-grey:           #e6e6e6;
+
+$colour-shade-amount: 10%;
+$colour-trans-amount: 0.5;
+
+$colours: (
+  white: (
+    trans: transparentize($colour-white, $colour-trans-amount),
+    light: lighten($colour-white, $colour-shade-amount),
+  	base: $colour-white,
+    dark: darken($colour-white, 1%),
+  ),
+  blue: (
+    trans: transparentize($colour-blue, $colour-trans-amount),
+    light: lighten($colour-blue, $colour-shade-amount),
+    base: $colour-blue,
+    dark: darken($colour-blue, 25%),
+    text: darken($colour-blue, 30%)
+  ),
+  green: (
+    trans: transparentize($colour-green, $colour-trans-amount),
+    light: lighten($colour-green, $colour-shade-amount),
+    base: $colour-green,
+    dark: darken($colour-green, $colour-shade-amount)
+  ),
+  pink: (
+    trans: transparentize($colour-pink, $colour-trans-amount),
+    light: lighten($colour-pink, $colour-shade-amount),
+    base: $colour-pink,
+    dark: darken($colour-pink, $colour-shade-amount)
+  ),
+  purple: (
+    trans: transparentize($colour-purple, $colour-trans-amount),
+    light: lighten($colour-purple, $colour-shade-amount),
+    base: $colour-purple,
+    dark: darken($colour-purple, $colour-shade-amount)
+  ),
+  yellow: (
+    trans: transparentize($colour-yellow, $colour-trans-amount),
+    light: lighten($colour-yellow, $colour-shade-amount),
+    base: $colour-yellow,
+    dark: darken($colour-yellow, $colour-shade-amount)
+  ),
+  aqua: (
+    trans: transparentize($colour-aqua, $colour-trans-amount),
+    light: lighten($colour-aqua, $colour-shade-amount),
+    base: $colour-aqua,
+    dark: darken($colour-aqua, $colour-shade-amount)
+  ),
+  grey: (
+    trans: transparentize($colour-grey, $colour-trans-amount),
+    light: lighten($colour-grey, $colour-shade-amount),
+    base: $colour-grey,
+    dark: darken($colour-grey, $colour-shade-amount)
+  ),
+);
+
+@function colour($name, $tone: 'base') {
+    @return map-get(map-get($colours, $name), $tone);
+}
+
+@mixin gradient-bg {
+    background: colour(blue);
+    background: -moz-linear-gradient(bottom, colour(blue), colour(blue, light)); /* FF3.6-15 */
+    background: -webkit-linear-gradient(bottom, colour(blue), colour(blue, light)); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top, colour(blue), colour(blue, light)); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@mixin gradient-bg-green {
+    background: colour(green);
+    background: -moz-linear-gradient(bottom, colour(green), colour(green, light)); /* FF3.6-15 */
+    background: -webkit-linear-gradient(bottom, colour(green), colour(green, light)); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top, colour(green), colour(green, light)); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+@mixin shadow {
+    -webkit-box-shadow: 0px 0px 2em 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 2em 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 2em 0px rgba(0,0,0,0.75);
+}
+
+@mixin shadow-bottom {
+    -webkit-box-shadow: 0 1em 1em -1em rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 1em 1em -1em rgba(0,0,0,0.75);
+    box-shadow: 0 1em 1em -1em rgba(0,0,0,0.75);
+}
+
+@mixin text-shadow {
+    -webkit-text-shadow: 1px 1px 10px rgba(0,0,0,0.75);
+    -moz-text-shadow: 1px 1px 10px rgba(0,0,0,0.75);
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.75);
+}
+
+@mixin text-shadow-light {
+    -webkit-text-shadow: 2px 2px 10px rgba(0,0,0,0.25);
+    -moz-text-shadow: 2px 2px 10px rgba(0,0,0,0.25);
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.25);
+}
