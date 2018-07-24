@@ -1,14 +1,14 @@
 {
   "checksum": {
-    "previous": "309d867f7cf230fb5925bc158130794fe69f0a38659989d518ea621e022bc18e",
-    "current": "309d867f7cf230fb5925bc158130794fe69f0a38659989d518ea621e022bc18e"
+    "previous": "a3dec45b09e6e56b26e86e29aafe26ce15883ad0ed2fca8dd67640f850e64f20",
+    "current": "a3dec45b09e6e56b26e86e29aafe26ce15883ad0ed2fca8dd67640f850e64f20"
   },
   "fonts": [
-    "theme/fonts/kowala-icons/kowala-icons_309d867f7cf230fb5925bc158130794f.ttf",
-    "theme/fonts/kowala-icons/kowala-icons_309d867f7cf230fb5925bc158130794f.svg",
-    "theme/fonts/kowala-icons/kowala-icons_309d867f7cf230fb5925bc158130794f.woff",
-    "theme/fonts/kowala-icons/kowala-icons_309d867f7cf230fb5925bc158130794f.eot",
-    "theme/fonts/kowala-icons/kowala-icons_309d867f7cf230fb5925bc158130794f.woff2"
+    "theme/fonts/kowala-icons/kowala-icons_a3dec45b09e6e56b26e86e29aafe26ce.ttf",
+    "theme/fonts/kowala-icons/kowala-icons_a3dec45b09e6e56b26e86e29aafe26ce.svg",
+    "theme/fonts/kowala-icons/kowala-icons_a3dec45b09e6e56b26e86e29aafe26ce.woff",
+    "theme/fonts/kowala-icons/kowala-icons_a3dec45b09e6e56b26e86e29aafe26ce.eot",
+    "theme/fonts/kowala-icons/kowala-icons_a3dec45b09e6e56b26e86e29aafe26ce.woff2"
   ],
   "glyphs": {
     "document": {
@@ -68,7 +68,7 @@
     "font_design_size": 16,
     "font_em": 512,
     "font_name": "kowala-icons",
-    "force": false,
+    "force": true,
     "input": {
       "templates": "fonts/vectors",
       "vectors": "fonts/vectors"
