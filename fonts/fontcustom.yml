@@ -54,7 +54,7 @@ force: true
 
 output:
   fonts: theme/fonts/kowala-icons
-  css:   styles
+  css:   styles/mixins
 #  preview: app/views/styleguide
 #  my-custom-template.yml: path/to/template/output
 
