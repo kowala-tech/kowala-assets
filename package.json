@@ -1,0 +1,26 @@
+{
+  "name": "kowala-assets",
+  "version": "1.0.0",
+  "description": "### Staging",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server ./assets -p 9090"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kowala-tech/kowala-assets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kowala-tech/kowala-assets/issues"
+  },
+  "homepage": "https://github.com/kowala-tech/kowala-assets#readme",
+  "dependencies": {
+    "foundation-sites": "^6.4.3",
+    "hover.css": "^2.3.2",
+    "http-server": "^0.11.1",
+    "sass-burger": "^1.3.1"
+  }
+}
