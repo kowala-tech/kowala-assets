@@ -2,8 +2,8 @@
 
 ### Staging
 
-[http://cdn.staging.kowala.io]()
+[cdn.staging.kowala.io]()
 
 ### Production
 
-[http://cdn.kowala.tech]()
+[cdn.kowala.tech]()
