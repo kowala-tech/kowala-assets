@@ -61,18 +61,3 @@ $colours: (
     dark: darken($colour-grey, $colour-shade-amount)
   )
 );
-
-@function colour($name, $tone: 'base'){
-  @return map-get(map-get($colours, "#{$name}"), $tone)
-};
-
-@each $name, $map in $colours{
-  @each $tone, $colour_code in $map{
-    .#{$name}-#{$tone}-background{
-      background: $colour_code
-    }
-    .#{$name}-#{$tone}-text{
-      color: $colour_code
-    }
-  }
-};
