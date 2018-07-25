@@ -12,5 +12,5 @@
 [cdn.kowala.tech]()
 
 ### Add SASS to an existing project
-`git clone https://github.com/kowala-tech/kowala-styles.git PATH_TO_STYLES/ --depth 0`
+`git clone https://github.com/kowala-tech/kowala-styles.git PATH_TO_STYLES/ --depth 1`
 `cd PATH_TO_STYLES && git filter-branch --prune-empty --subdirectory-filter sass HEAD`
