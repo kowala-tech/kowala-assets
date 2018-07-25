@@ -13,3 +13,7 @@
 
 ### Add SASS to an existing project
 `git submodule add https://github.com/kowala-tech/kowala-assets.git PATH_TO_ASSET_FILE`
+
+Stay up-to-date with:
+
+`git submodule update --recursive`
