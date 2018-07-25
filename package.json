@@ -1,5 +1,5 @@
 {
-  "name": "kowala-styles",
+  "name": "kowala-assets",
   "version": "1.0.0",
   "description": "### Staging",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kowala-tech/kowala-styles.git"
+    "url": "git+https://github.com/kowala-tech/kowala-assets.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kowala-tech/kowala-styles/issues"
+    "url": "https://github.com/kowala-tech/kowala-assets/issues"
   },
-  "homepage": "https://github.com/kowala-tech/kowala-styles#readme",
+  "homepage": "https://github.com/kowala-tech/kowala-assets#readme",
   "dependencies": {
     "http-server": "^0.11.1"
   }
