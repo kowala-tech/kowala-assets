@@ -1,0 +1,23 @@
+{
+  "name": "kowala-styles",
+  "version": "1.0.0",
+  "description": "### Staging",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server ./assets -p 9090"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kowala-tech/kowala-styles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kowala-tech/kowala-styles/issues"
+  },
+  "homepage": "https://github.com/kowala-tech/kowala-styles#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

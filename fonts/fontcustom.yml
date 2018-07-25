@@ -53,8 +53,8 @@ force: true
 #  templates: my/templates
 
 output:
-  fonts: theme/fonts/kowala-icons
-  css:   styles/mixins
+  fonts: assets/fonts/kowala-icons
+  css:   sass/mixins
 #  preview: app/views/styleguide
 #  my-custom-template.yml: path/to/template/output
 

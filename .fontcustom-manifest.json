@@ -1,14 +1,14 @@
 {
   "checksum": {
-    "previous": "0844047f715cf7ce9cd2a499ea816232e2fdc521b52a00db46e52a6c4012c6d8",
-    "current": "0844047f715cf7ce9cd2a499ea816232e2fdc521b52a00db46e52a6c4012c6d8"
+    "previous": "ad755f683436158e2cc245d1e7d7f91125fdf97b2d900bfebd4162d1399ac4c3",
+    "current": "ad755f683436158e2cc245d1e7d7f91125fdf97b2d900bfebd4162d1399ac4c3"
   },
   "fonts": [
-    "theme/fonts/kowala-icons/kowala-icons_0844047f715cf7ce9cd2a499ea816232.ttf",
-    "theme/fonts/kowala-icons/kowala-icons_0844047f715cf7ce9cd2a499ea816232.svg",
-    "theme/fonts/kowala-icons/kowala-icons_0844047f715cf7ce9cd2a499ea816232.woff",
-    "theme/fonts/kowala-icons/kowala-icons_0844047f715cf7ce9cd2a499ea816232.eot",
-    "theme/fonts/kowala-icons/kowala-icons_0844047f715cf7ce9cd2a499ea816232.woff2"
+    "assets/fonts/kowala-icons/kowala-icons_ad755f683436158e2cc245d1e7d7f911.ttf",
+    "assets/fonts/kowala-icons/kowala-icons_ad755f683436158e2cc245d1e7d7f911.svg",
+    "assets/fonts/kowala-icons/kowala-icons_ad755f683436158e2cc245d1e7d7f911.woff",
+    "assets/fonts/kowala-icons/kowala-icons_ad755f683436158e2cc245d1e7d7f911.eot",
+    "assets/fonts/kowala-icons/kowala-icons_ad755f683436158e2cc245d1e7d7f911.woff2"
   ],
   "glyphs": {
     "document": {
@@ -75,9 +75,9 @@
     },
     "no_hash": false,
     "output": {
-      "css": "styles/mixins",
-      "fonts": "theme/fonts/kowala-icons",
-      "preview": "theme/fonts/kowala-icons"
+      "css": "sass/mixins",
+      "fonts": "assets/fonts/kowala-icons",
+      "preview": "assets/fonts/kowala-icons"
     },
     "preprocessor_path": "/fonts/",
     "quiet": false,
@@ -86,6 +86,6 @@
     ]
   },
   "templates": [
-    "styles/mixins/_kowala-icons.scss"
+    "sass/mixins/_kowala-icons.scss"
   ]
 }

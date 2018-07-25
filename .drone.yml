@@ -12,8 +12,8 @@ pipeline:
       acl: public-read
       region: "us-east-1"
       bucket: "cdn.staging.kowala.io"
-      source: theme/**/*
-      strip_prefix: theme/
+      source: assets/**/*
+      strip_prefix: assets/
       target: /
       encryption: AES256
       when:
@@ -25,8 +25,8 @@ pipeline:
       acl: public-read
       region: "us-east-1"
       bucket: "cdn.kowala.tech"
-      source: theme/**/*
-      strip_prefix: theme/
+      source: assets/**/*
+      strip_prefix: assets/
       target: /
       encryption: AES256
       when:
