@@ -1,4 +1,4 @@
-@import mixins/colour-variables
+@import colour-variables
 
 @function colour($name, $tone: 'base')
   @return map-get(map-get($colours, "#{$name}"), $tone)
