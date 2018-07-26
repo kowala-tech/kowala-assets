@@ -19,9 +19,12 @@
 `git checkout -b kowala-assets kowala-assets/master`
 
 #### Step 2: Pull the repo into the existing project
-`git read-tree --prefix=PATH_TO_YOUR_ASSETS/kowala-assets/ -u kowala-assets`
+`git read-tree --prefix=themes/kowala/styles/kowala-assets/ -u kowala-assets`
 
-#### Step 3: Stay up-to-date
+#### Step 3: Install dependencies
+`cd themes/kowala/styles/kowala-assets/ && npm i`
+
+#### Step 4: Stay up-to-date
 `git checkout kowala-assets`
 `git pull`
 `git checkout YOUR_BRANCH`
