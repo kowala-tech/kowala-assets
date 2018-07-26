@@ -11,9 +11,18 @@
 
 [cdn.kowala.tech]()
 
-### Add SASS to an existing project
-`git submodule add https://github.com/kowala-tech/kowala-assets.git PATH_TO_ASSET_FILE`
+### Add to an existing project
 
-Stay up-to-date with:
+#### Step 1: Add as a remote in the existing project
+`git remote add kowala-assets git@github.com:kowala-tech/kowala-assets.git`
+`git fetch kowala-assets`
+`git checkout -b kowala-assets kowala-assets/master`
 
-`git submodule update --recursive`
+#### Step 2: Pull the repo into the existing project
+`git read-tree --prefix=PATH_TO_YOUR_ASSETS/kowala-assets/ -u kowala-assets`
+
+#### Step 3: Stay up-to-date
+`git checkout kowala-assets`
+`git pull`
+`git checkout YOUR_BRANCH`
+`git merge --squash -s subtree --no-commit kowala-assets`
