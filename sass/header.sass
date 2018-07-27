@@ -1,0 +1,45 @@
+@import foundation
+
+header
+  padding-top: 1em
+  color: white
+  background: colour(blue, light)
+
+  .masthead
+    +xy-grid
+
+    position: relative
+    img
+      width: 100px
+
+    .title
+      +xy-cell(12)
+      +breakpoint(large)
+        +xy-cell(3)
+        margin-top: 5px
+
+    .menu
+      +flex-align(right,bottom)
+      display: none
+
+      +breakpoint(large)
+        +xy-cell(9)
+        display: flex
+
+      .icon
+        margin: 0 .5em
+
+      ul
+
+        li
+          list-style: none
+          display: inline-block
+          margin-left: 2em
+
+          a
+            padding-left: 0
+            padding-right: 0
+            color: colour(white)
+
+            +breakpoint(xlarge)
+              font-size: 1em
