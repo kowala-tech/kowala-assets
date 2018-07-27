@@ -13,19 +13,14 @@
 
 ### Add to an existing project
 
-#### Step 1: Add as a remote in the existing project
+#### Step 1: Add as a remote to existing project
 `git remote add kowala-assets git@github.com:kowala-tech/kowala-assets.git`
-`git fetch kowala-assets`
-`git checkout -b kowala-assets kowala-assets/master`
 
-#### Step 2: Pull the repo into the existing project
-`git read-tree --prefix=themes/kowala/styles/kowala-assets/ -u kowala-assets`
+#### Step 2: Create a subtree
+`git subtree add --prefix=themes/kowala/styles/kowala-assets/ kowala-assets master`
 
-#### Step 3: Install dependencies
+#### Install dependencies
 `cd themes/kowala/styles/kowala-assets/ && npm i`
 
-#### Step 4: Stay up-to-date
-`git checkout kowala-assets`
-`git pull`
-`git checkout YOUR_BRANCH`
-`git merge --squash -s subtree --no-commit kowala-assets`
+#### Stay up-to-date
+`git subtree pull --prefix=themes/kowala/styles/kowala-assets/ --squash kowala-assets master`
