@@ -1,6 +1,6 @@
 SASS_STYLE     ?= compressed
 SASS_PATHS     ?= sass:assets/styles
-SASS_INCLUDES  ?= -I node_modules/foundation-sites/scss
+SASS_INCLUDES  ?= -I node_modules/foundation-sites/scss -I node_modules/hover.css/scss -I node_modules/sass-burger
 
 build: clean install build-font-icons copy-fonts build-css copy-images copy-pdfs
 
