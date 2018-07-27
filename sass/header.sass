@@ -10,21 +10,6 @@ header
     position: relative
     z-index: 999
 
-    a.button
-      position: relative
-      display: block
-      text-transform: uppercase
-      font-weight: 600
-      color: colour(blue, dark)
-
-      +breakpoint(medium)
-        font-size: 1em
-        padding: 1em
-
-      +breakpoint(large)
-        font-size: 0.9em
-        padding: 1em
-
   .masthead
     +xy-grid
 
@@ -53,11 +38,11 @@ header
           margin-left: 2em
 
           a
+            display: inline-block
             padding-left: 0
             padding-right: 0
             color: colour(white)
             .icon
-              display: inline-block
               margin-right: 1em
             +breakpoint(xlarge)
               font-size: 1em
