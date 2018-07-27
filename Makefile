@@ -2,7 +2,10 @@ SASS_STYLE     ?= compressed
 SASS_PATHS     ?= sass:assets/styles
 SASS_INCLUDES  ?= -I node_modules/foundation-sites/scss
 
-build: clean build-font-icons copy-fonts build-css copy-images copy-pdfs
+build: clean install build-font-icons copy-fonts build-css copy-images copy-pdfs
+
+install:
+	@npm install
 
 watch: build watch-css
 

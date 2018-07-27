@@ -3,7 +3,7 @@ pipeline:
     build:
       image: kowalatech/hugo-dev:1.0.4
       commands:
-        - make
+        - make build
       when:
         branch: [develop, master]
 
