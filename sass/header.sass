@@ -5,6 +5,26 @@ header
   color: colour(white)
   background: colour(blue, light)
 
+  .container
+    +xy-grid-container
+    position: relative
+    z-index: 999
+
+    a.button
+      position: relative
+      display: block
+      text-transform: uppercase
+      font-weight: 600
+      color: colour(blue, dark)
+
+      +breakpoint(medium)
+        font-size: 1em
+        padding: 1em
+
+      +breakpoint(large)
+        font-size: 0.9em
+        padding: 1em
+
   .masthead
     +xy-grid
 
@@ -26,12 +46,7 @@ header
         +xy-cell(9)
         display: flex
 
-      .icon
-        display: inline-block
-        margin-right: 1em
-
       ul
-
         li
           list-style: none
           display: inline-block
@@ -41,6 +56,8 @@ header
             padding-left: 0
             padding-right: 0
             color: colour(white)
-
+            .icon
+              display: inline-block
+              margin-right: 1em
             +breakpoint(xlarge)
               font-size: 1em
