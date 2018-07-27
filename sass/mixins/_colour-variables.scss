@@ -12,6 +12,8 @@ $colour-shade-amount: 10%;
 $colour-trans-amount: 0.5;
 
 $colours: (
+  white: (trans: transparentize($colour-white, $colour-trans-amount), light: lighten($colour-white, $colour-shade-amount), base: $colour-white, dark: darken($colour-white, 25%), text: darken($colour-white, 30%)),
+  black: (trans: transparentize($colour-black, $colour-trans-amount), light: lighten($colour-black, $colour-shade-amount), base: $colour-black, dark: darken($colour-black, 25%), text: darken($colour-black, 30%)),
   blue: (trans: transparentize($colour-blue, $colour-trans-amount), light: lighten($colour-blue, $colour-shade-amount), base: $colour-blue, dark: darken($colour-blue, 25%), text: darken($colour-blue, 30%)),
   green: (trans: transparentize($colour-green, $colour-trans-amount), light: lighten($colour-green, $colour-shade-amount), base: $colour-green, dark: darken($colour-green, $colour-shade-amount)),
   pink: (trans: transparentize($colour-pink, $colour-trans-amount), light: lighten($colour-pink, $colour-shade-amount), base: $colour-pink, dark: darken($colour-pink, $colour-shade-amount)),
