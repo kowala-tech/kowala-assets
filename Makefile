@@ -17,6 +17,7 @@ build-font-icons:
 
 build-css:
 	@sass --style $(SASS_STYLE) $(SASS_INCLUDES) --update $(SASS_PATHS) -E "UTF-8"
+	@for f in $(ls assets/styles/*.css); do gzip $f > $f.gz; done;
 
 watch-css:
 	@sass --style $(SASS_STYLE) $(SASS_INCLUDES) --watch $(SASS_PATHS) -E "UTF-8"
