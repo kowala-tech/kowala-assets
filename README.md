@@ -61,7 +61,7 @@ https://cdn.kowala.tech/pdfs/kowala-protocol-white-paper.pdf
 <link rel="mask-icon" href="ihttps://cdn.kowala.tech/images/meta/safari-pinned-tab.svg?v=69Pwvmj0bL" color="#5bbad5">
 <link rel="shortcut icon" href="https://cdn.kowala.tech/images/meta/favicon.ico?v=69Pwvmj0bL">
 <link href="images/fav/manifest.json" rel="manifest">
-<meta name="apple-mobile-web-app-title" content="Kowal app">
+<meta name="apple-mobile-web-app-title" content="Kowala app">
 <meta name="application-name" content="Kowala app">
 <meta name="msapplication-config" content="https://cdn.kowala.tech/images/meta/browserconfig.xml">
 <meta name="theme-color" content="#1d6986">
