@@ -13,17 +13,14 @@ Run Drone locally:
 
 ### Add to an existing git repo
 
-#### Step 1: Add as a remote to existing project
-`git remote add kowala-assets git@github.com:kowala-tech/kowala-assets.git`
-
-#### Step 2: Create a subtree in kowala-assets/ (or wherever)
+#### Creating a subtree in kowala-assets/ (or wherever)
 `git subtree add --prefix=kowala-assets/ kowala-assets develop`
 
 #### Pulling downstream
-`git subtree pull --prefix=kowala-assets/ kowala-assets develop --squash`
+`git subtree pull --prefix=kowala-assets/ git@github.com:kowala-tech/kowala-assets.git develop --squash`
 
 #### Pushing upstream
-`git subtree push --prefix=kowala-assets/ kowala-assets develop`
+`git subtree push --prefix=kowala-assets/ git@github.com:kowala-tech/kowala-assets.git develop`
 
 #### Install dependencies
 `cd kowala-assets/ && npm i & cd ..`
